@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video Slider </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <video id="slider" autoplay muted loop>
+            <source src="images/vid2.mp4" type="video/mp4">
+        </video>
+
+        <ul class="navigation">
+            <li onclick="videoUrl('images/vid2.mp4')"><img src="images/f1.jpg"></li>
+            <li onclick="videoUrl('images/sience_technology.mp4')"><img src="images/f2.jpg"></li>
+            <li onclick="videoUrl('images/vid4.mp4')"><img src="images/f3.jpg"></li>
+            <li onclick="videoUrl('images/ufo.mp4')"><img src="images/f4.jpg"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function videoUrl(hmmmmm){
+            document.getElementById("slider").src = hmmmmm;
+        }
+    </script>
+</body>
+</html>
